@@ -4,7 +4,7 @@ import com.revature.foodinstagram.beans.User;
 import com.revature.foodinstagram.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sun.plugin.dom.exception.InvalidAccessException;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -31,7 +31,7 @@ public class UserServices {
         }
         else{
             System.out.println("inside else");
-            throw new InvalidAccessException("Invalid Credentials");
+            return null;
         }
     }
 
